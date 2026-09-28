@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Pauline Lentes — enseignante spécialisée et psychologue, Valais. Outils pédagogiques PL-planif’ et PL-lect’.">
+<meta name="description" content="Pauline Lentes — enseignante spécialisée et psychologue, Valais. Outils pédagogiques PL-planif’, PL-lect’ et PL-CPS.">
 <title>Pauline Lentes</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Ccircle cx='80' cy='80' r='76' fill='%232F6F63'/%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76'/%3E%3Cpath d='M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +77,7 @@
 
   /* ---------- tools (mis en avant) ---------- */
   .section-intro{color:var(--muted); max-width:56ch; margin-bottom:28px; font-size:1.02rem}
-  .tools{display:grid; grid-template-columns:1fr 1fr; gap:24px}
+  .tools{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px}
   .tool-card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:28px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:14px}
   .tool-card h3{font-size:1.4rem}
   .tool-card > p{color:var(--muted); font-size:.98rem}
@@ -146,7 +146,7 @@
   <section id="outils">
     <div class="wrap">
       <h2>Outils</h2>
-      <p class="section-intro">Deux applications web, conçues pour la classe et testées avec mes élèves. Gratuites, sans compte, sans donnée envoyée à un serveur.</p>
+      <p class="section-intro">Trois applications web, conçues pour la classe et testées avec mes élèves. Gratuites, sans compte, sans donnée envoyée à un serveur.</p>
       <div class="tools">
         <div class="tool-card">
           <span class="tool-tag">Application web</span>
@@ -171,6 +171,18 @@
             <li>Basé sur le moteur de décodage LireCouleur</li>
           </ul>
           <a class="btn" href="https://7nel.github.io/PL-lect/">Voir l'outil →</a>
+        </div>
+        <div class="tool-card">
+          <span class="tool-tag">Application web</span>
+          <h3>PL-CPS</h3>
+          <p>Programme annuel des compétences psychosociales pour le CO : une compétence par mois, avec des activités courtes et des supports prêts à projeter en classe.</p>
+          <ul class="feature-list">
+            <li>Une compétence travaillée par mois, sur toute l'année scolaire</li>
+            <li>Activités courtes, pensées pour un petit groupe d'appui</li>
+            <li>Supports prêts à projeter, sans préparation supplémentaire</li>
+            <li>Adapté aux degrés 9e–11e HarmoS, format libre sans MER imposé</li>
+          </ul>
+          <a class="btn" href="https://7nel.github.io/PL-CPS/">Voir l'outil →</a>
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 # Pauline Lentes — site vitrine
 
-Site personnel de présentation de mon travail d'enseignante spécialisée et des outils pédagogiques que je conçois pour la classe : [PL-planif'](https://7nel.github.io/PL-planif/) et [PL-lect'](https://7nel.github.io/PL-lect/).
+Site personnel de présentation de mon travail d'enseignante spécialisée et des outils pédagogiques que je conçois pour la classe : [PL-planif'](https://7nel.github.io/PL-planif/), [PL-lect'](https://7nel.github.io/PL-lect/) et [PL-CPS](https://7nel.github.io/PL-CPS/).
 
-**En ligne :** https://7nel.github.io
+**En ligne :** https://7nel.github.io/PL/
 
 ## Structure
 

@@ -8,6 +8,8 @@ Site personnel de présentation de mon travail d'enseignante spécialisée et de
 
 ```
 index.html          page unique, autoportante (CSS et JS inclus)
+icon-*.png          icône du site (onglet, écran d'accueil) en 32, 180 et 512 px
+manifest.json       nom et couleurs pour l'ajout à l'écran d'accueil
 img/
   lac-valais.jpg     photo du lac de Salanfe (section "À propos")
 ```

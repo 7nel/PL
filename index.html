@@ -51,7 +51,8 @@
   .skip:focus{left:0; z-index:10}
 
   /* ---------- header ---------- */
-  header{padding-block:20px; border-bottom:1px solid var(--border)}
+  html{scroll-padding-top:84px}
+  header{position:sticky; top:0; z-index:5; padding-block:20px; background:var(--bg); border-bottom:1px solid var(--border)}
   .header-row{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
   .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink)}
   .brand svg{width:34px; height:34px; flex:none}
@@ -153,8 +154,15 @@
     .hero-grid{grid-template-columns:1fr}
     .tools{grid-template-columns:1fr}
     .tool-card.lead{padding:28px}
-    nav{gap:4px 8px}
-    nav a{padding:12px 8px}
+    header{padding-block:8px}
+    html{scroll-padding-top:64px}
+    .brand span{display:none}
+    .header-row{gap:8px}
+    nav{gap:0}
+    nav a{padding:12px 6px; font-size:.9rem}
+  }
+  @media (max-width:380px){
+    nav a{padding:12px 4px; font-size:.85rem}
   }
 </style>
 </head>
@@ -165,7 +173,7 @@
 
 <header>
   <div class="wrap header-row">
-    <a class="brand" href="#main">
+    <a class="brand" href="#main" aria-label="Pauline Lentes, haut de la page">
       <svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="76" fill="currentColor" style="color:var(--accent)"/><g fill="none" stroke="var(--on-accent)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path d="M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76"/><path d="M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111"/></g></svg>
       <span>Pauline Lentes</span>
     </a>

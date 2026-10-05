@@ -12,6 +12,11 @@ icon-*.png          icône du site (onglet, écran d'accueil) en 32, 180 et 512 
 manifest.json       nom et couleurs pour l'ajout à l'écran d'accueil
 img/
   lac-valais.jpg     photo du lac de Salanfe (section "À propos")
+  pl-planif.jpg      capture de PL-planif' (hero)
+  pl-lect.jpg        capture de PL-lect' (carte outil)
+  pl-cps.jpg         capture de PL-CPS (carte outil)
+fonts/
+  atkinson-*.woff2   Atkinson Hyperlegible auto-hébergée (aucun appel à Google Fonts)
 ```
 
 ## Mettre à jour le site
@@ -20,7 +25,7 @@ Le site est une seule page HTML sans dépendance de build : il suffit de modifie
 
 ## Identité visuelle
 
-Le site applique le système d'identité de Pauline Lentes : palette sobre, police [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) (accessibilité renforcée), monogramme PL. Voir le [design system](https://claude.ai/artifact/8Y4yKxJy4C4u5vBcKg4h4Z) pour les tokens complets (couleurs, typographie, espacement).
+Le site applique le système d'identité de Pauline Lentes : palette sobre, police [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) (accessibilité renforcée, servie depuis `fonts/`), monogramme PL. Voir le [design system](https://claude.ai/artifact/8Y4yKxJy4C4u5vBcKg4h4Z) pour les tokens complets (couleurs, typographie, espacement).
 
 ## Formulaire de contact
 

@@ -48,21 +48,17 @@ nav a:hover{color:var(--accent)}
 nav a[aria-current="page"]{color:var(--ink); text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:2px}
 
 /* ---------- hero ---------- */
-.hero{padding-block:88px 80px; position:relative; overflow:hidden; background:var(--accent); color:var(--accent-ink)}
-.hero-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:32px; align-items:center}
-/* Mode sombre : bandeau d'accueil en gris-vert doux plutôt qu'en menthe vif (texte #182422 : contraste 6,6:1) */
-@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .hero{--accent:#86AFA5} }
-:root[data-theme="dark"] .hero{--accent:#86AFA5}
-.hero h1{font-size:clamp(2.1rem,5.2vw,2.6rem); font-weight:700; line-height:1.1}
-.hero p.lede{text-wrap:balance; margin-top:24px; font-size:clamp(1.1rem,2vw,1.3rem); color:var(--accent-ink); max-width:46ch}
+.hero{--hero-bg:var(--accent); --hero-fg:var(--accent-ink); padding-block:80px; position:relative; overflow:hidden; background:var(--hero-bg); color:var(--hero-fg)}
+/* Mode sombre : bandeau teinté d'accent plutôt qu'un aplat clair (texte --ink sur ~9:1) */
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .hero{--hero-bg:color-mix(in srgb,var(--accent) 24%,var(--bg)); --hero-fg:var(--ink)} }
+:root[data-theme="dark"] .hero{--hero-bg:color-mix(in srgb,var(--accent) 24%,var(--bg)); --hero-fg:var(--ink)}
+.hero h1{font-size:clamp(2.1rem,5.2vw,2.6rem); font-weight:700; line-height:1.1; max-width:20ch}
+.hero p.lede{text-wrap:balance; margin-top:24px; font-size:clamp(1.1rem,2vw,1.3rem); color:var(--hero-fg); max-width:46ch}
+.byline{margin-top:20px; font-weight:700; color:var(--hero-fg)}
 .hero-actions{display:flex; flex-wrap:wrap; align-items:center; gap:12px 24px; margin-top:28px}
-.hero-actions .btn{margin-top:0; padding:14px 26px; background:var(--accent-ink); color:var(--accent)}
-.link-quiet{font-weight:700; color:var(--accent-ink); text-underline-offset:4px}
-.hero a:focus-visible{outline:3px solid var(--accent-ink); outline-offset:3px}
-.hero-shot{margin:0}
-.hero-shot a{display:block; border-radius:var(--r-panel); overflow:hidden; box-shadow:var(--shadow)}
-.hero-shot img{display:block; width:100%; height:auto}
-.hero-shot figcaption{margin-top:10px; font-size:1rem; color:var(--accent-ink)}
+.hero-actions .btn{margin-top:0; padding:14px 26px; background:var(--hero-fg); color:var(--hero-bg)}
+.link-quiet{font-weight:700; color:var(--hero-fg); text-underline-offset:4px}
+.hero a:focus-visible{outline:3px solid var(--hero-fg); outline-offset:3px}
 
 section{padding-block:72px}
 #outils,#contact{background:var(--surface-2)}
@@ -86,14 +82,15 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 .section-intro{color:var(--ink-2); max-width:56ch; margin-bottom:28px; font-size:1.02rem}
 .section-intro:has(+ .section-intro){margin-bottom:12px}
 .tools{display:grid; grid-template-columns:repeat(2,1fr); gap:24px}
-.tool-card{background:var(--surface); border-radius:var(--r-panel); padding:28px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:14px}
+.tool-card{--pad:28px; background:var(--surface); border-radius:var(--r-panel); padding:var(--pad); box-shadow:var(--shadow); display:flex; flex-direction:column; gap:14px}
 .tool-card h3{font-size:1.4rem}
 .tool-card > p{color:var(--ink-2); font-size:1rem}
-.tool-card.lead{grid-column:1 / -1; padding:36px; gap:16px}
+.tool-card.lead{--pad:36px; grid-column:1 / -1; gap:16px}
 .tool-card.lead h3{font-size:1.9rem}
 .tool-card.lead > p{font-size:1.05rem; max-width:60ch}
 .tool-card.lead .feature-list{font-size:1rem}
-.tool-shot{display:block; margin:-28px -28px 0; border-radius:var(--r-panel) var(--r-panel) 0 0; overflow:hidden}
+.tool-shot{display:block; margin:calc(var(--pad) * -1) calc(var(--pad) * -1) 0; border-radius:var(--r-panel) var(--r-panel) 0 0; overflow:hidden}
+.tool-card.lead .tool-shot img{aspect-ratio:1.9/1}
 .tool-shot img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; object-position:top}
 .tool-card.quiet{grid-column:1 / -1; box-shadow:none; background:transparent; flex-direction:row; flex-wrap:wrap; align-items:center; gap:12px 28px; padding:22px 28px; border:1px solid var(--line); border-radius:var(--r-panel)}
 .tool-card.quiet h3{font-size:1.15rem}
@@ -101,7 +98,7 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 .tool-card.quiet .btn{margin-top:0}
 @media (hover:hover){
   .btn:hover{background:color-mix(in srgb,var(--accent) 82%,var(--ink))}
-  .hero-actions .btn:hover{background:color-mix(in srgb,var(--accent-ink) 85%,var(--accent))}
+  .hero-actions .btn:hover{background:color-mix(in srgb,var(--hero-fg) 85%,var(--hero-bg))}
 }
 .feature-list{margin:0; padding-left:20px; font-size:1rem; color:var(--ink); display:flex; flex-direction:column; gap:6px}
 .btn{display:inline-flex; align-items:center; gap:6px; align-self:flex-start; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:700; padding:10px 18px; border-radius:var(--r-ctl); font-size:1rem; margin-top:4px}
@@ -109,7 +106,7 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 /* ---------- réflexions ---------- */
 .reflections{display:flex; flex-direction:column; gap:24px}
 .reflection-card{background:var(--surface); border-radius:var(--r-panel); padding:28px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:12px}
-.reflection-card h2{font-size:1.4rem; margin-bottom:0; line-height:1.25}
+.reflection-card h2{font-size:1.6rem; margin-bottom:0; line-height:1.25}
 .reflection-meta{color:var(--ink-2); font-size:1rem; margin-top:-4px}
 .reflection-card p{color:var(--ink); font-size:1rem; max-width:70ch}
 .reflection-card p + p{margin-top:14px}
@@ -121,13 +118,23 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 .refs ul{margin-top:12px}
 .close-article{align-self:flex-start; margin-top:16px; font:inherit; font-weight:700; color:var(--accent); background:none; border:1px solid var(--accent); border-radius:var(--r-ctl); padding:10px 16px; cursor:pointer}
 .reflection-more{margin-top:4px}
-.reflection-more > p:first-of-type{margin-top:12px}
+.reflection-more > h3:first-of-type{margin-top:12px}
+.reflection-more h3{font-size:1.3rem; line-height:1.3; margin:28px 0 8px}
 .reflection-more summary{cursor:pointer; color:var(--accent); font-weight:700; font-size:1rem; list-style:none}
 .reflection-more summary::-webkit-details-marker{display:none}
 .reflection-more[open] summary{margin-bottom:4px}
 .reflection-more .less-label{display:none}
 .reflection-more[open] .more-label{display:none}
 .reflection-more[open] .less-label{display:inline}
+
+/* ---------- aperçu des réflexions (accueil) ---------- */
+.apercu{padding-bottom:24px}
+.reflection-links{list-style:none; margin:0; padding:0; max-width:68ch}
+.reflection-links li + li{border-top:1px solid var(--line)}
+.reflection-links a{display:flex; flex-direction:column; gap:2px; padding:16px 0; text-decoration:none; color:var(--ink)}
+.reflection-links .rl-title{font-weight:700; font-size:1.15rem; line-height:1.3}
+.reflection-links .rl-meta{color:var(--ink-2)}
+@media (hover:hover){ .reflection-links a:hover .rl-title{color:var(--accent); text-decoration:underline; text-underline-offset:4px} }
 
 /* ---------- contact ---------- */
 form{display:flex; flex-direction:column; gap:14px; max-width:460px}
@@ -159,9 +166,8 @@ footer svg{width:22px; height:22px; vertical-align:middle}
 }
 @media (max-width:680px){
   .reflection-card{padding:20px}
-  .hero-grid{grid-template-columns:1fr}
   .tools{grid-template-columns:1fr}
-  .tool-card.lead{padding:28px}
+  .tool-card.lead{--pad:28px}
   header{padding-block:8px}
   .header-row{gap:8px}
   nav{gap:0}

@@ -78,7 +78,7 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 /* ---------- about (condensé) ---------- */
 .bio{max-width:68ch; font-size:1.02rem}
 .bio + .bio{margin-top:14px}
-.bio-line{margin-top:20px; max-width:68ch; font-size:1rem; color:var(--ink-2)}
+.bio-line{margin:0 0 20px; max-width:68ch; font-size:1rem; color:var(--ink)}
 .tool-credit{font-size:1rem}
 
 /* ---------- tools (mis en avant) ---------- */

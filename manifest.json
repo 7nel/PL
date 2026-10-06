@@ -1,7 +1,7 @@
 {
-  "name": "Pauline Lentes",
+  "name": "PL · outils pour la classe",
   "short_name": "PL",
-  "description": "Site vitrine de Pauline Lentes, enseignante spécialisée, et de ses outils pédagogiques PL.",
+  "description": "Des outils pédagogiques faits en classe, pour la classe : PL-planif’, PL-lect’ et PL-CPS.",
   "lang": "fr",
   "start_url": "./",
   "display": "browser",

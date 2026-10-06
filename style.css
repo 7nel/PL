@@ -49,6 +49,9 @@ nav a[aria-current="page"]{color:var(--ink)}
 /* ---------- hero ---------- */
 .hero{padding-block:88px 80px; position:relative; overflow:hidden; background:var(--accent); color:var(--on-accent)}
 .hero-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:32px; align-items:center}
+/* Mode sombre : bandeau d'accueil en gris-vert doux plutôt qu'en menthe vif (texte #182422 : contraste 6,6:1) */
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .hero{--accent:#86AFA5} }
+:root[data-theme="dark"] .hero{--accent:#86AFA5}
 .hero h1{font-size:clamp(2.1rem,5.2vw,2.6rem); font-weight:700; line-height:1.1}
 .hero p.lede{text-wrap:balance; margin-top:24px; font-size:clamp(1.1rem,2vw,1.3rem); color:var(--on-accent); max-width:46ch}
 .hero-actions{display:flex; flex-wrap:wrap; align-items:center; gap:12px 24px; margin-top:28px}

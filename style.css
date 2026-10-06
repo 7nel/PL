@@ -106,15 +106,15 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 /* ---------- réflexions ---------- */
 .reflections{display:flex; flex-direction:column; gap:24px}
 .reflection-card{background:var(--surface); border-radius:var(--r-panel); padding:28px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:12px}
-.reflection-card h2{font-size:1.25rem; margin-bottom:0; line-height:1.6}
-.reflection-meta{color:var(--ink-2); font-size:1rem}
+.reflection-card h2{font-size:1.4rem; margin-bottom:0; line-height:1.25}
+.reflection-meta{color:var(--ink-2); font-size:1rem; margin-top:-4px}
 .reflection-card p{color:var(--ink); font-size:1rem; max-width:70ch}
 .reflection-card p + p{margin-top:14px}
 .reflection-card{scroll-margin-top:16px}
 .reflection-refs{margin:0; padding-left:20px; font-size:1rem; font-style:normal; color:var(--ink-2); display:flex; flex-direction:column; gap:8px}
 .refs{margin-top:12px}
-.refs summary, .reflection-more summary{display:flex; align-items:center; min-height:44px}
-.refs summary{cursor:pointer; color:var(--accent); font-weight:700; font-size:1rem}
+.reflection-more summary{display:flex; align-items:center; min-height:44px}
+.refs summary{display:list-item; padding-block:9px; cursor:pointer; color:var(--accent); font-weight:700; font-size:1rem}
 .refs ul{margin-top:12px}
 .close-article{align-self:flex-start; margin-top:16px; font:inherit; font-weight:700; color:var(--accent); background:none; border:1px solid var(--accent); border-radius:var(--r-ctl); padding:10px 16px; cursor:pointer}
 .reflection-more{margin-top:4px}
@@ -146,16 +146,17 @@ footer{padding-block:28px; border-top:1px solid var(--line); display:flex; align
 footer svg{width:22px; height:22px; vertical-align:middle}
 
 @media (max-width:680px){
+  .reflection-card{padding:20px}
   .hero-grid{grid-template-columns:1fr}
   .tools{grid-template-columns:1fr}
   .tool-card.lead{padding:28px}
   header{padding-block:8px}
-  html{scroll-padding-top:64px}
+  html{scroll-padding-top:124px}
   .header-row{gap:8px}
   nav{gap:0}
   nav a{padding:12px 6px; font-size:.95rem}
 }
 @media (max-width:380px){
   nav a{padding:12px 4px; font-size:.9rem}
-  html{scroll-padding-top:120px}
+  html{scroll-padding-top:170px}
 }

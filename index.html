@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Des outils pédagogiques gratuits, faits en classe pour la classe au Cycle d’Orientation : PL-planif’, PL-lect’ et PL-CPS. Par Pauline Lentes, enseignante spécialisée en Valais.">
 <title>PL · Des outils faits en classe, pour la classe</title>
+<link rel="canonical" href="https://7nel.github.io/PL/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:site_name" content="PL">
+<meta property="og:title" content="PL · Des outils faits en classe, pour la classe">
+<meta property="og:description" content="Des outils pédagogiques gratuits pour le Cycle d’Orientation : PL-planif’, PL-lect’ et PL-CPS.">
+<meta property="og:url" content="https://7nel.github.io/PL/">
+<meta property="og:image" content="https://7nel.github.io/PL/img/pl-planif.jpg">
+<meta property="og:image:alt" content="PL-planif’ pendant une séance : minuteur, tâches et étapes suivantes.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#2f6f63">
 <meta name="apple-mobile-web-app-title" content="PL">
 <link rel="manifest" href="manifest.json">
@@ -13,6 +23,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Ccircle cx='80' cy='80' r='76' fill='%232F6F63'/%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76'/%3E%3Cpath d='M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preload" href="fonts/atkinson-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/atkinson-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +34,7 @@
 <header>
   <div class="wrap header-row">
     <a class="brand" href="#main" aria-label="PL, haut de la page">
-      <svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="76" fill="currentColor" style="color:var(--accent)"/><g fill="none" stroke="var(--on-accent)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path d="M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76"/><path d="M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111"/></g></svg>
+      <svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="76" fill="currentColor" style="color:var(--accent)"/><g fill="none" stroke="var(--accent-ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path d="M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76"/><path d="M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111"/></g></svg>
     </a>
     <nav aria-label="Navigation principale">
       <a href="#outils">Outils</a>
@@ -59,7 +70,7 @@
       <h2>Outils</h2>
       <p class="section-intro">Trois applications web conçues pour la classe et testées avec mes élèves, et une veille scientifique. Gratuit, sans compte, sans donnée envoyée à un serveur.</p>
       <div class="tools">
-        <div class="tool-card lead">
+        <article class="tool-card lead">
           <h3>PL-planif’</h3>
           <p>Gestion de séance pour la classe&#8239;: un déroulé minuté qui s’enchaîne seul, une vue à projeter au beamer, et une série d’outils annexes pour la gestion de groupe (tirage au sort, feu de circulation, sonomètre, suivi des tâches et des devoirs).</p>
           <ul class="feature-list">
@@ -67,8 +78,8 @@
             <li>Fonctionne hors-ligne, installable comme une application</li>
           </ul>
           <a class="btn" href="https://7nel.github.io/PL-planif/">Ouvrir PL-planif’ →</a>
-        </div>
-        <div class="tool-card">
+        </article>
+        <article class="tool-card">
           <a class="tool-shot" href="https://7nel.github.io/PL-lect/" tabindex="-1" aria-hidden="true"><img src="img/pl-lect.jpg" width="1200" height="750" loading="lazy" alt=""></a>
           <h3>PL-lect’</h3>
           <p>Un prompteur de lecture pour faire lire les élèves à voix haute, avec un texte codé et réglé pour rester accessible aux lecteurs les plus fragiles. Basé sur le moteur de décodage LireCouleur.</p>
@@ -77,8 +88,8 @@
             <li>Police, taille, espacement et couleurs entièrement réglables</li>
           </ul>
           <a class="btn" href="https://7nel.github.io/PL-lect/">Ouvrir PL-lect’ →</a>
-        </div>
-        <div class="tool-card">
+        </article>
+        <article class="tool-card">
           <a class="tool-shot" href="https://7nel.github.io/PL-CPS/" tabindex="-1" aria-hidden="true"><img src="img/pl-cps.jpg" width="1200" height="750" loading="lazy" alt=""></a>
           <h3>PL-CPS</h3>
           <p>Programme annuel des compétences psychosociales pour le Cycle d’Orientation (CO, degrés 9e–11e HarmoS)&#8239;: une compétence par mois, avec des activités courtes pensées pour un petit groupe d’appui.</p>
@@ -88,12 +99,12 @@
           </ul>
           <p class="tool-credit">Conçu avec Melody Ehrensperger.</p>
           <a class="btn" href="https://7nel.github.io/PL-CPS/">Ouvrir PL-CPS →</a>
-        </div>
-        <div class="tool-card quiet">
+        </article>
+        <article class="tool-card quiet">
           <h3>Veille Neurodev’</h3>
           <p>Une veille sur la recherche internationale autour des troubles neurodéveloppementaux&#8239;: un flash du jour, une revue hebdomadaire, des implications pour le CO. Alimentée automatiquement&#8239;: à lire avec esprit critique.</p>
           <a class="btn" href="https://7nel.github.io/PL-neurodev/">Ouvrir la veille →</a>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -106,7 +117,7 @@
       <p class="bio">Je viens de la psychologie du développement, puis de l’autisme, et je me forme aujourd’hui à l’enseignement spécialisé. Ces regards m’apprennent à partir de comment un élève fonctionne, plutôt que d’une logique «&#8239;trouble = maladie&#8239;»&#8239;: une vision adaptative, tournée vers ce qui l’aide à avancer. J’essaie ensuite de l’aider à le comprendre lui aussi. Ces outils évoluent au contact des élèves, en fonction des besoins et à mesure de mes propres découvertes.</p>
       <p class="bio-line">Pauline Lentes, enseignante spécialisée. Psychologie du développement (Universités de Genève et de Lausanne), CAS en autisme (Genève), Master en enseignement spécialisé en cours (HEP Vaud).</p>
       <figure class="photo-banner">
-        <div class="frame"><img src="img/lac-valais.jpg" alt="Reflet des montagnes dans le lac de Salanfe, en Valais" loading="lazy"></div>
+        <div class="frame"><img src="img/lac-valais-1000.jpg" srcset="img/lac-valais-1000.jpg 1000w, img/lac-valais.jpg 2000w" sizes="(min-width:860px) 820px, 100vw" width="2000" height="1500" alt="Reflet des montagnes dans le lac de Salanfe, en Valais" loading="lazy"></div>
         <figcaption>Lac de Salanfe, Valais — photographie personnelle</figcaption>
       </figure>
     </div>
@@ -117,6 +128,7 @@
       <h2>Me contacter</h2>
       <p class="bio" style="margin-bottom:20px">Une question sur un outil, une collaboration, un échange de pratique&#8239;: écrivez-moi.</p>
       <form id="contactForm">
+        <p class="form-note">Tous les champs sont obligatoires.</p>
         <div class="hp" aria-hidden="true"><input type="text" name="botcheck" tabindex="-1" autocomplete="off"></div>
         <div>
           <label for="name">Nom</label>
@@ -141,7 +153,7 @@
 
 <footer>
   <div class="wrap header-row">
-    <span>© <span id="year"></span> Pauline Lentes</span>
+    <span>© <span id="year"></span> Pauline Lentes · Tous droits réservés</span>
     <span>Enseignement spécialisé · Valais, Suisse</span>
   </div>
 </footer>
@@ -163,7 +175,7 @@
   var emailInput = document.getElementById('email');
   var messageInput = document.getElementById('message');
   var sendLabel = 'Envoyer';
-  var failText = 'Le message n’a pas pu être envoyé. Il est toujours dans le formulaire : vérifiez votre connexion puis cliquez à nouveau sur « Envoyer ».';
+  var failText = 'Le message n’a pas pu être envoyé. Il est toujours dans le formulaire\u202f: vérifiez votre connexion puis cliquez à nouveau sur «\u202fEnvoyer\u202f».';
   function done(ok, text) {
     var b = form.querySelector('button[type="submit"]');
     b.disabled = false;
@@ -198,7 +210,7 @@
       .then(function (r) { return r.json(); })
       .then(function (data) {
         if (data.success) {
-          done(true, 'Message envoyé, merci !');
+          done(true, 'Message envoyé, merci\u202f!');
           form.reset();
         } else {
           done(false, failText);

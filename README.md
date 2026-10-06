@@ -14,6 +14,7 @@ icon-*.png          icône du site (onglet, écran d'accueil) en 32, 180 et 512 
 manifest.json       nom et couleurs pour l'ajout à l'écran d'accueil
 img/
   lac-valais.jpg     photo du lac de Salanfe (section "À propos")
+  lac-valais-1000.jpg  même photo en 1000 px (version légère servie via srcset)
   pl-planif.jpg      capture de PL-planif' (hero)
   pl-lect.jpg        capture de PL-lect' (carte outil)
   pl-cps.jpg         capture de PL-CPS (carte outil)

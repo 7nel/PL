@@ -40,12 +40,12 @@ p{margin:0}
 html{scroll-padding-top:84px}
 header{position:sticky; top:0; z-index:5; padding-block:20px; background:var(--bg); border-bottom:1px solid var(--line)}
 .header-row{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
-.brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink)}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); padding:5px; margin:-5px}
 .brand svg{width:34px; height:34px; flex:none}
 nav{display:flex; gap:20px; flex-wrap:wrap}
 nav a{text-decoration:none; color:var(--ink-2); font-weight:700; font-size:1rem}
 nav a:hover{color:var(--accent)}
-nav a[aria-current="page"]{color:var(--ink)}
+nav a[aria-current="page"]{color:var(--ink); text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:2px}
 
 /* ---------- hero ---------- */
 .hero{padding-block:88px 80px; position:relative; overflow:hidden; background:var(--accent); color:var(--accent-ink)}
@@ -78,6 +78,7 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 /* ---------- about (condensé) ---------- */
 .bio{max-width:68ch; font-size:1.02rem}
 .bio + .bio{margin-top:14px}
+.contact-intro{margin-bottom:20px}
 .bio-line{margin:0 0 20px; max-width:68ch; font-size:1rem; color:var(--ink)}
 .tool-credit{font-size:1rem}
 
@@ -98,8 +99,10 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 .tool-card.quiet h3{font-size:1.15rem}
 .tool-card.quiet > p{flex:1 1 320px; font-size:1rem}
 .tool-card.quiet .btn{margin-top:0}
-.btn:hover{background:color-mix(in srgb,var(--accent) 82%,var(--ink))}
-.hero-actions .btn:hover{background:color-mix(in srgb,var(--accent-ink) 85%,var(--accent))}
+@media (hover:hover){
+  .btn:hover{background:color-mix(in srgb,var(--accent) 82%,var(--ink))}
+  .hero-actions .btn:hover{background:color-mix(in srgb,var(--accent-ink) 85%,var(--accent))}
+}
 .feature-list{margin:0; padding-left:20px; font-size:1rem; color:var(--ink); display:flex; flex-direction:column; gap:6px}
 .btn{display:inline-flex; align-items:center; gap:6px; align-self:flex-start; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:700; padding:10px 18px; border-radius:var(--r-ctl); font-size:1rem; margin-top:4px}
 
@@ -145,18 +148,26 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 footer{padding-block:28px; border-top:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; color:var(--ink-2); font-size:1rem}
 footer svg{width:22px; height:22px; vertical-align:middle}
 
+/* Écran tactile : cibles d'au moins 44 px */
+@media (pointer:coarse){
+  nav a, .link-quiet{display:inline-flex; align-items:center; min-height:44px}
+}
+/* En-tête non collant sur petit écran ou écran bas (paysage) : il occuperait 110 à 160 px */
+@media (max-width:680px), (max-height:500px){
+  header{position:static}
+  html{scroll-padding-top:16px}
+}
 @media (max-width:680px){
   .reflection-card{padding:20px}
   .hero-grid{grid-template-columns:1fr}
   .tools{grid-template-columns:1fr}
   .tool-card.lead{padding:28px}
   header{padding-block:8px}
-  html{scroll-padding-top:124px}
   .header-row{gap:8px}
   nav{gap:0}
-  nav a{padding:12px 6px; font-size:.95rem}
+  nav a{padding:12px 6px; font-size:1rem}
 }
 @media (max-width:380px){
-  nav a{padding:12px 4px; font-size:.9rem}
-  html{scroll-padding-top:170px}
+  nav{display:grid; grid-template-columns:1fr 1fr; width:100%}
+  nav a{padding:12px 6px}
 }

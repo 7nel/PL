@@ -8,7 +8,7 @@ Page d'accueil des outils pédagogiques que je construis pour mes élèves au Cy
 
 ```
 index.html          accueil : outils, à propos, contact
-reflexions.html     page secondaire : les trois textes de réflexion
+reflexions.html     page secondaire : les textes de réflexion
 style.css           styles partagés par les deux pages
 icon-*.png          icône du site (onglet, écran d'accueil) en 32, 180 et 512 px
 manifest.json       nom et couleurs pour l'ajout à l'écran d'accueil

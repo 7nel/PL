@@ -52,7 +52,7 @@ nav a[aria-current="page"]{color:var(--ink); text-decoration:underline; text-und
 /* Mode sombre : bandeau teinté d'accent plutôt qu'un aplat clair (texte --ink sur ~9:1) */
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .hero{--hero-bg:color-mix(in srgb,var(--accent) 24%,var(--bg)); --hero-fg:var(--ink)} }
 :root[data-theme="dark"] .hero{--hero-bg:color-mix(in srgb,var(--accent) 24%,var(--bg)); --hero-fg:var(--ink)}
-.hero h1{font-size:clamp(2.1rem,5.2vw,2.6rem); font-weight:700; line-height:1.1; max-width:20ch}
+.hero h2{font-size:clamp(2.1rem,5.2vw,2.6rem); font-weight:700; line-height:1.1; max-width:20ch; margin-bottom:0}
 .hero p.lede{text-wrap:balance; margin-top:24px; font-size:clamp(1.1rem,2vw,1.3rem); color:var(--hero-fg); max-width:46ch}
 .byline{margin-top:20px; font-weight:700; color:var(--hero-fg)}
 .hero-actions{display:flex; flex-wrap:wrap; align-items:center; gap:12px 24px; margin-top:28px}

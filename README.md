@@ -1,6 +1,6 @@
 # PL — site vitrine
 
-Page d'accueil des outils pédagogiques que je construis pour mes élèves au Cycle d'Orientation : [PL-planif’](https://7nel.github.io/PL-planif/), [PL-lect’](https://7nel.github.io/PL-lect/) et [PL-CPS](https://7nel.github.io/PL-CPS/).
+Page d'accueil des outils pédagogiques que je construis pour mes élèves au Cycle d'Orientation : [PL-planif’](https://7nel.github.io/PL-planif/), [PL-lect’](https://7nel.github.io/PL-lect/), [PL-CPS’](https://7nel.github.io/PL-CPS/) et [PL-restart’](https://7nel.github.io/PL-restart/).
 
 **En ligne :** https://7nel.github.io/PL/
 
@@ -18,6 +18,7 @@ img/
   pl-planif.jpg      capture de PL-planif’ (hero)
   pl-lect.jpg        capture de PL-lect’ (carte outil)
   pl-cps.jpg         capture de PL-CPS (carte outil)
+  pl-restart.jpg     capture de PL-restart’ (carte outil)
 fonts/
   atkinson-*.woff2   Atkinson Hyperlegible auto-hébergée (aucun appel à Google Fonts)
 ```

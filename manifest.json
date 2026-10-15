@@ -1,7 +1,7 @@
 {
   "name": "PL · outils pour la classe",
   "short_name": "PL",
-  "description": "Des outils pédagogiques faits en classe, pour la classe : PL-planif’, PL-lect’, PL-CPS’ et PL-restart’.",
+  "description": "Des outils pédagogiques faits en classe, pour la classe : PL-planif’, PL-lect’, PL-CPS’, PL-restart’ et PL-neurodev’.",
   "lang": "fr",
   "start_url": "./",
   "display": "browser",

@@ -54,11 +54,6 @@ nav a[aria-current="page"]{color:var(--ink); text-decoration:underline; text-und
 :root[data-theme="dark"] .hero{--hero-bg:color-mix(in srgb,var(--accent) 24%,var(--bg)); --hero-fg:var(--ink)}
 .hero h2{font-size:clamp(2.1rem,5.2vw,2.6rem); font-weight:700; line-height:1.1; max-width:20ch; margin-bottom:0}
 .hero p.lede{text-wrap:balance; margin-top:24px; font-size:clamp(1.1rem,2vw,1.3rem); color:var(--hero-fg); max-width:46ch}
-.byline{margin-top:20px; font-weight:700; color:var(--hero-fg)}
-.hero-actions{display:flex; flex-wrap:wrap; align-items:center; gap:12px 24px; margin-top:28px}
-.hero-actions .btn{margin-top:0; padding:14px 26px; background:var(--hero-fg); color:var(--hero-bg)}
-.link-quiet{font-weight:700; color:var(--hero-fg); text-underline-offset:4px}
-.hero a:focus-visible{outline:3px solid var(--hero-fg); outline-offset:3px}
 
 section{padding-block:72px}
 #outils,#contact{background:var(--surface-2)}
@@ -83,7 +78,7 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 .section-intro:has(+ .section-intro){margin-bottom:12px}
 .tool-links{list-style:none; margin:0 0 56px; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); grid-auto-rows:1fr; gap:14px}
 .tool-links li{display:flex}
-.tool-links a{flex:1; display:flex; flex-direction:column; gap:4px; min-height:84px; padding:16px 44px 16px 20px; position:relative; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-panel); box-shadow:var(--shadow); text-decoration:none; color:var(--ink)}
+.tool-links a{flex:1; display:flex; flex-direction:column; gap:4px; min-height:84px; padding:16px 44px 16px 20px; position:relative; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-panel); text-decoration:none; color:var(--ink)}
 .tool-links a::after{content:"→"; position:absolute; right:18px; top:50%; transform:translateY(-50%); font-weight:700; color:var(--accent); font-size:1.2rem}
 .tool-links a:hover{border-color:var(--accent)}
 .tool-links a:focus-visible{outline:3px solid var(--accent); outline-offset:3px}
@@ -107,7 +102,6 @@ h2,.page-title{font-size:clamp(1.7rem,3.2vw,2.3rem); font-weight:700; margin-bot
 .tool-card.quiet .btn{margin-top:0}
 @media (hover:hover){
   .btn:hover{background:color-mix(in srgb,var(--accent) 82%,var(--ink))}
-  .hero-actions .btn:hover{background:color-mix(in srgb,var(--hero-fg) 85%,var(--hero-bg))}
 }
 .feature-list{margin:0; padding-left:20px; font-size:1rem; color:var(--ink); display:flex; flex-direction:column; gap:6px}
 .btn{display:inline-flex; align-items:center; gap:6px; align-self:flex-start; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:700; padding:10px 18px; border-radius:var(--r-ctl); font-size:1rem; margin-top:4px}
@@ -161,12 +155,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 #formStatus[data-state="ok"]{color:var(--accent)}
 #formStatus[data-state="err"]{color:var(--ink); border:2px solid var(--danger); border-radius:8px; padding:10px 12px}
 
-footer{padding-block:28px; border-top:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; color:var(--ink-2); font-size:1rem}
+footer{padding-block:28px; border-top:1px solid var(--line); color:var(--ink-2); font-size:1rem}
 footer svg{width:22px; height:22px; vertical-align:middle}
 
 /* Écran tactile : cibles d'au moins 44 px */
 @media (pointer:coarse){
-  nav a, .link-quiet{display:inline-flex; align-items:center; min-height:44px}
+  nav a{display:inline-flex; align-items:center; min-height:44px}
 }
 /* En-tête non collant sur petit écran ou écran bas (paysage) : il occuperait 110 à 160 px */
 @media (max-width:680px), (max-height:500px){

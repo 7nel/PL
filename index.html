@@ -25,141 +25,111 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Ccircle cx='80' cy='80' r='76' fill='%232F6F63'/%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='11' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76'/%3E%3Cpath d='M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preload" href="fonts/atkinson-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/atkinson-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lexend.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
 <a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><div class="wrap">
+  <a class="id" href="#main" aria-label="PL, haut de la page"><svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="76" fill="var(--accent)"/><g fill="none" stroke="var(--accent-ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path d="M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76"/><path d="M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111"/></g></svg></a>
+  <nav aria-label="Navigation principale"><a href="#outils" aria-current="page">Outils</a><a href="reflexions.html">Réflexions</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav>
+</div></header>
 
-<header>
-  <div class="wrap header-row">
-    <a class="brand" href="#main" aria-label="PL, haut de la page">
-      <svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="76" fill="currentColor" style="color:var(--accent)"/><g fill="none" stroke="var(--accent-ink)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><path d="M56,114 C55,100 58,86 56,70 C55,58 57,50 56,48 C64,46 78,45 80,58 C82,70 70,76 56,76"/><path d="M100,48 C99,64 101,86 100,100 C99,108 101,112 100,112 L128,111"/></g></svg>
-    </a>
-    <nav aria-label="Navigation principale">
-      <a href="#outils">Outils</a>
-      <a href="reflexions.html">Réflexions</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<main id="main" class="accueil">
+  <section class="open wrap">
+    <h1 class="voix t-display">Des outils pour répondre aux besoins</h1>
+  </section>
 
-<main id="main">
-  <section id="outils">
-    <div class="wrap">
-      <h1 class="page-title">Des outils pour répondre aux besoins</h1>
-      <ul class="tool-links" aria-label="Accès direct aux outils">
-        <li><a href="https://7nel.github.io/PL-planif/"><span class="tl-name">PL-planif’</span><span class="tl-what">Gestion de séance</span></a></li>
-        <li><a href="https://7nel.github.io/PL-lect/"><span class="tl-name">PL-lect’</span><span class="tl-what">Prompteur de lecture</span></a></li>
-        <li><a href="https://7nel.github.io/PL-CPS/"><span class="tl-name">PL-CPS’</span><span class="tl-what">Compétences psychosociales</span></a></li>
-        <li><a href="https://7nel.github.io/PL-restart/"><span class="tl-name">PL-restart’</span><span class="tl-what">Repartir après un blocage</span></a></li>
-        <li><a href="https://7nel.github.io/PL-neurodev/"><span class="tl-name">PL-neurodev’</span><span class="tl-what">Veille scientifique</span></a></li>
-      </ul>
-      <h2 id="outils-detail" class="detail-title">Les outils en détail</h2>
-      <div class="tools">
-        <article class="tool-card lead">
-          <a class="tool-shot" href="https://7nel.github.io/PL-planif/" tabindex="-1" aria-hidden="true"><img src="img/pl-planif.jpg" width="700" height="430" loading="lazy" alt=""></a>
-          <h3>PL-planif’</h3>
-          <p>Gestion de séance&#8239;: un déroulé minuté qui s’enchaîne seul, à projeter au beamer, avec des outils de gestion de groupe (tirage au sort, feu de circulation, sonomètre, suivi des tâches et des devoirs).</p>
-          <p>Fonctionne hors-ligne, installable comme une application.</p>
-          <a class="btn" href="https://7nel.github.io/PL-planif/">Ouvrir PL-planif’ →</a>
-        </article>
-        <article class="tool-card">
-          <a class="tool-shot" href="https://7nel.github.io/PL-lect/" tabindex="-1" aria-hidden="true"><img src="img/pl-lect.jpg" width="1200" height="750" loading="lazy" alt=""></a>
-          <h3>PL-lect’</h3>
-          <p>Un prompteur de lecture pour faire lire les élèves à voix haute, avec un texte codé accessible aux lecteurs les plus fragiles. Basé sur le moteur LireCouleur.</p>
-          <ul class="feature-list">
-            <li>Codage phonologique du texte (syllabes, sons, liaisons)</li>
-            <li>Police, taille, espacement et couleurs réglables</li>
-          </ul>
-          <a class="btn" href="https://7nel.github.io/PL-lect/">Ouvrir PL-lect’ →</a>
-        </article>
-        <article class="tool-card">
-          <a class="tool-shot" href="https://7nel.github.io/PL-CPS/" tabindex="-1" aria-hidden="true"><img src="img/pl-cps.jpg" width="1200" height="750" loading="lazy" alt=""></a>
-          <h3>PL-CPS’</h3>
-          <p>Programme annuel de compétences psychosociales pour le CO (degrés 9e–11e HarmoS)&#8239;: une compétence par mois, avec des activités courtes pour un petit groupe d’appui.</p>
-          <ul class="feature-list">
-            <li>Supports prêts à projeter, sans préparation supplémentaire</li>
-          </ul>
-          <p class="tool-credit">Conçu avec Melody Ehrensperger.</p>
-          <a class="btn" href="https://7nel.github.io/PL-CPS/">Ouvrir PL-CPS’ →</a>
-        </article>
-        <article class="tool-card lead">
-          <a class="tool-shot" href="https://7nel.github.io/PL-restart/" tabindex="-1" aria-hidden="true"><img src="img/pl-restart.jpg" width="1200" height="750" loading="lazy" alt=""></a>
-          <h3>PL-restart’</h3>
-          <p>Une aide pour l’élève qui bloque en pleine tâche&#8239;: il indique où ça coince, l’outil lui propose une stratégie en quelques étapes, puis il dit si ça repart.</p>
-          <ul class="feature-list">
-            <li>Stratégies pour le français, les maths, la révision, les langues, la fatigue et le stress</li>
-            <li>Outils d’apaisement repris de PL-CPS’ (respiration carrée, pieds au sol…)</li>
-          </ul>
-          <a class="btn" href="https://7nel.github.io/PL-restart/">Ouvrir PL-restart’ →</a>
-        </article>
-        <article class="tool-card quiet">
-          <h3>PL-neurodev’</h3>
-          <p>Une veille sur la recherche internationale autour des troubles neurodéveloppementaux&#8239;: un flash du jour, une revue hebdomadaire, des implications pour le CO. Alimentée automatiquement&#8239;: à lire avec esprit critique.</p>
-          <a class="btn" href="https://7nel.github.io/PL-neurodev/">Ouvrir la veille →</a>
-        </article>
+  <section class="sommaire wrap" id="outils" aria-label="Accès direct aux outils">
+    <hr class="rule">
+    <ol>
+      <li><a class="row" href="https://7nel.github.io/PL-planif/"><span class="num n">01</span><span class="voix nm">PL-planif’</span><span class="what">Gestion de séance</span><svg viewBox="0 0 48 16" aria-hidden="true"><path d="M3 8H44M37 2l7 6-7 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a class="row" href="https://7nel.github.io/PL-lect/"><span class="num n">02</span><span class="voix nm">PL-lect’</span><span class="what">Prompteur de lecture</span><svg viewBox="0 0 48 16" aria-hidden="true"><path d="M3 8H44M37 2l7 6-7 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a class="row" href="https://7nel.github.io/PL-CPS/"><span class="num n">03</span><span class="voix nm">PL-CPS’</span><span class="what">Compétences psychosociales</span><svg viewBox="0 0 48 16" aria-hidden="true"><path d="M3 8H44M37 2l7 6-7 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a class="row" href="https://7nel.github.io/PL-restart/"><span class="num n">04</span><span class="voix nm">PL-restart’</span><span class="what">Repartir après un blocage</span><svg viewBox="0 0 48 16" aria-hidden="true"><path d="M3 8H44M37 2l7 6-7 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      <li><a class="row" href="https://7nel.github.io/PL-neurodev/"><span class="num n">05</span><span class="voix nm">PL-neurodev’</span><span class="what">Veille scientifique</span><svg viewBox="0 0 48 16" aria-hidden="true"><path d="M3 8H44M37 2l7 6-7 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+    </ol>
+  </section>
+
+  <section class="details" aria-labelledby="d1">
+    <div class="wrap"><h2 id="d1" class="kicker">Les outils en détail</h2></div>
+
+    <article class="detail" aria-labelledby="t-planif">
+      <div class="txt">
+        <h3 id="t-planif" class="voix t-title">PL-planif’</h3>
+        <p>Gestion de séance&#8239;: un déroulé minuté qui s’enchaîne seul, à projeter au beamer, avec des outils de gestion de groupe (tirage au sort, feu de circulation, sonomètre, suivi des tâches et des devoirs).</p><p>Fonctionne hors-ligne, installable comme une application.</p>
+        <a class="btn pri" href="https://7nel.github.io/PL-planif/">Ouvrir PL-planif’ →</a>
       </div>
-    </div>
-  </section>
+      <figure><img src="img/pl-planif.jpg" width="700" height="430" loading="lazy" alt="PL-planif’ pendant une séance : minuteur, tâches et étapes suivantes."></figure>
+    </article>
 
-  <section id="apercu-reflexions" class="apercu">
-    <div class="wrap">
-      <h2>Réflexions</h2>
-      <p class="section-intro">Ce que dit la recherche, et ce que j’essaie d’en faire en classe.</p>
-      <ul class="reflection-links">
-        <li><a href="reflexions.html#haut-potentiel"><span class="rl-title">Haut potentiel&#8239;: ce que la recherche a établi, et ce qui circule</span><span class="rl-meta">Lecture&#8239;: environ 4 min</span></a></li>
-        <li><a href="reflexions.html#apf-neurodiversite"><span class="rl-title">Apprentissages fondamentaux (APF) et neurodiversité au Cycle d’Orientation</span><span class="rl-meta">Lecture&#8239;: environ 2 min</span></a></li>
-        <li><a href="reflexions.html#cps-climat-de-classe"><span class="rl-title">Compétences psychosociales et climat de classe&#8239;: les conditions du vivre-ensemble et de l’apprentissage</span><span class="rl-meta">Lecture&#8239;: environ 3 min</span></a></li>
-      </ul>
+    <div class="wrap pair">
+      <article aria-labelledby="t-lect">
+        <figure><img src="img/pl-lect.jpg" width="1200" height="750" loading="lazy" alt="PL-lect’ : préparation d’une lecture avec texte codé."></figure>
+        <h3 id="t-lect" class="voix t-head">PL-lect’</h3>
+        <p>Un prompteur de lecture pour faire lire les élèves à voix haute, avec un texte codé accessible aux lecteurs les plus fragiles. Basé sur le moteur LireCouleur.</p><ul class="feat"><li>Codage phonologique du texte (syllabes, sons, liaisons)</li><li>Police, taille, espacement et couleurs réglables</li></ul>
+        <a class="btn" href="https://7nel.github.io/PL-lect/">Ouvrir PL-lect’ →</a>
+      </article>
+      <article aria-labelledby="t-cps">
+        <figure><img src="img/pl-cps.jpg" width="1200" height="750" loading="lazy" alt="PL-CPS’ : la compétence du mois et ses activités."></figure>
+        <h3 id="t-cps" class="voix t-head">PL-CPS’</h3>
+        <p>Programme annuel de compétences psychosociales pour le CO (degrés 9e–11e HarmoS)&#8239;: une compétence par mois, avec des activités courtes pour un petit groupe d’appui.</p><ul class="feat"><li>Supports prêts à projeter, sans préparation supplémentaire</li></ul><p class="credit">Conçu avec Melody Ehrensperger.</p>
+        <a class="btn" href="https://7nel.github.io/PL-CPS/">Ouvrir PL-CPS’ →</a>
+      </article>
     </div>
-  </section>
 
-  <section class="hero" aria-labelledby="pont-titre">
-    <div class="wrap">
-      <div>
-        <h2 id="pont-titre">Des outils faits en classe, pour la classe.</h2>
-        <p class="lede">Ce que la recherche apporte, je le mets à l’épreuve avec mes élèves du Cycle d’Orientation (CO)&#8239;: ces outils en sont nés.</p>
+    <article class="detail rev" aria-labelledby="t-restart">
+      <figure><img src="img/pl-restart.jpg" width="1200" height="750" loading="lazy" alt="PL-restart’ : écran de stratégie en trois étapes."></figure>
+      <div class="txt">
+        <h3 id="t-restart" class="voix t-title">PL-restart’</h3>
+        <p>Une aide pour l’élève qui bloque en pleine tâche&#8239;: il indique où ça coince, l’outil lui propose une stratégie en quelques étapes, puis il dit si ça repart.</p><ul class="feat"><li>Stratégies pour le français, les maths, la révision, les langues, la fatigue et le stress</li><li>Outils d’apaisement repris de PL-CPS’ (respiration carrée, pieds au sol…)</li></ul>
+        <a class="btn" href="https://7nel.github.io/PL-restart/">Ouvrir PL-restart’ →</a>
       </div>
-    </div>
+    </article>
+
+    <article class="wrap quiet" aria-labelledby="t-neuro">
+      <h3 id="t-neuro" class="voix t-head">PL-neurodev’</h3>
+      <p>Une veille sur la recherche internationale autour des troubles neurodéveloppementaux&#8239;: un flash du jour, une revue hebdomadaire, des implications pour le CO. Alimentée automatiquement&#8239;: à lire avec esprit critique.</p>
+      <a class="btn" href="https://7nel.github.io/PL-neurodev/">Ouvrir la veille →</a>
+    </article>
   </section>
 
-  <section id="apropos">
-    <div class="wrap">
-      <h2>À propos</h2>
-      <p class="bio-line"><strong>Pauline Lentes</strong>, enseignante spécialisée. Psychologie du développement (Universités de Genève et de Lausanne), CAS en autisme (Genève), Master en enseignement spécialisé en cours (HEP Vaud).</p>
-      <p class="bio">J’enseigne au Cycle d’Orientation, où j’accompagne des élèves en difficulté d’apprentissage ou de comportement, avec ou sans trouble du spectre de l’autisme.</p>
-      <p class="bio">Devant des moments inconfortables en classe, et à force de jongler entre des outils incomplets ou limitants, j’ai préféré construire ma propre version de ces outils, qui réponde aux besoins de mes élèves et de ma pratique.</p>
-      <p class="bio">Je viens de la psychologie du développement, puis de l’autisme, et je me forme aujourd’hui à l’enseignement spécialisé. Ces regards m’apprennent à partir de comment un élève fonctionne, plutôt que d’une logique «&#8239;trouble = maladie&#8239;»&#8239;: une vision adaptative, tournée vers ce qui l’aide à avancer. J’essaie ensuite de l’aider à le comprendre lui aussi. Ces outils évoluent au contact des élèves, en fonction des besoins et à mesure de mes propres découvertes.</p>
-      <figure class="photo-banner">
-        <div class="frame"><img src="img/lac-valais-1000.jpg" srcset="img/lac-valais-1000.jpg 1000w, img/lac-valais.jpg 2000w" sizes="(min-width:860px) 820px, 100vw" width="2000" height="1500" alt="Reflet des montagnes dans le lac de Salanfe, en Valais" loading="lazy"></div>
-        <figcaption>Lac de Salanfe, Valais — photographie personnelle</figcaption>
-      </figure>
-    </div>
+  <section class="refl wrap" id="apercu-reflexions" aria-labelledby="r1">
+    <div class="hd"><span></span><div><h2 id="r1" class="voix t-title">Réflexions</h2><p>Ce que dit la recherche, et ce que j’essaie d’en faire en classe.</p></div></div>
+    <ul>
+      <li><a href="reflexions.html#haut-potentiel"><span class="min">Lecture&#8239;: environ 4 min</span><span class="voix tt">Haut potentiel&#8239;: ce que la recherche a établi, et ce qui circule</span></a></li>
+      <li><a href="reflexions.html#apf-neurodiversite"><span class="min">Lecture&#8239;: environ 2 min</span><span class="voix tt">Apprentissages fondamentaux (APF) et neurodiversité au Cycle d’Orientation</span></a></li>
+      <li><a href="reflexions.html#cps-climat-de-classe"><span class="min">Lecture&#8239;: environ 3 min</span><span class="voix tt">Compétences psychosociales et climat de classe&#8239;: les conditions du vivre-ensemble et de l’apprentissage</span></a></li>
+    </ul>
   </section>
 
-  <section id="contact">
-    <div class="wrap">
-      <h2>Me contacter</h2>
-      <p class="bio contact-intro">Une question sur un outil, une collaboration, un échange de pratique&#8239;: écrivez-moi.</p>
+  <section class="band" aria-labelledby="pont-titre"><div class="wrap">
+    <h2 id="pont-titre" class="voix t-display">Des outils faits en classe, pour la classe.</h2>
+    <p>Ce que la recherche apporte, je le mets à l’épreuve avec mes élèves du Cycle d’Orientation (CO)&#8239;: ces outils en sont nés.</p>
+  </div></section>
+
+  <section class="wrap about" id="apropos" aria-labelledby="ap">
+    <h2 id="ap" class="kicker">À propos</h2>
+    <div class="t">
+      <p><strong>Pauline Lentes</strong>, enseignante spécialisée. Psychologie du développement (Universités de Genève et de Lausanne), CAS en autisme (Genève), Master en enseignement spécialisé en cours (HEP Vaud).</p>
+      <p>J’enseigne au Cycle d’Orientation, où j’accompagne des élèves en difficulté d’apprentissage ou de comportement, avec ou sans trouble du spectre de l’autisme.</p>
+      <p>Devant des moments inconfortables en classe, et à force de jongler entre des outils incomplets ou limitants, j’ai préféré construire ma propre version de ces outils, qui réponde aux besoins de mes élèves et de ma pratique.</p>
+      <p>Je viens de la psychologie du développement, puis de l’autisme, et je me forme aujourd’hui à l’enseignement spécialisé. Ces regards m’apprennent à partir de comment un élève fonctionne, plutôt que d’une logique «&#8239;trouble = maladie&#8239;»&#8239;: une vision adaptative, tournée vers ce qui l’aide à avancer. J’essaie ensuite de l’aider à le comprendre lui aussi. Ces outils évoluent au contact des élèves, en fonction des besoins et à mesure de mes propres découvertes.</p>
+    </div>
+  </section>
+  <figure class="photo"><img src="img/lac-valais-1000.jpg" srcset="img/lac-valais-1000.jpg 1000w, img/lac-valais-1500.jpg 1500w, img/lac-valais.jpg 2000w" sizes="100vw" width="2000" height="1500" loading="lazy" alt="Reflet des montagnes dans le lac de Salanfe, en Valais"><figcaption>Lac de Salanfe, Valais — photographie personnelle</figcaption></figure>
+
+  <section class="wrap contact" id="contact" aria-labelledby="ct">
+    <h2 id="ct" class="voix t-title">Me contacter</h2>
+    <div class="cf">
+      <p class="intro">Une question sur un outil, une collaboration, un échange de pratique&#8239;: écrivez-moi.</p>
       <form id="contactForm">
         <p class="form-note">Tous les champs sont obligatoires.</p>
         <div class="hp" aria-hidden="true"><input type="text" name="botcheck" tabindex="-1" autocomplete="off"></div>
-        <div>
-          <label for="name">Nom</label>
-          <input id="name" name="name" type="text" required autocomplete="name">
-        </div>
-        <div>
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" required autocomplete="email">
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Envoyer</button>
+        <div><label for="name">Nom</label><input class="field" id="name" name="name" type="text" required autocomplete="name"></div>
+        <div><label for="email">E-mail</label><input class="field" id="email" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="message">Message</label><textarea class="field" id="message" name="message" required></textarea></div>
+        <button type="submit" class="btn pri">Envoyer</button>
         <p id="formStatus" role="status" aria-live="polite" tabindex="-1"></p>
         <p class="form-note">Envoyé via Web3Forms&#8239;: votre adresse n’est jamais affichée sur cette page. Je réponds dès que possible.</p>
         <noscript><p class="form-note">L’envoi demande JavaScript. Activez-le pour utiliser ce formulaire.</p></noscript>
@@ -167,14 +137,7 @@
     </div>
   </section>
 </main>
-
-<footer>
-  <div class="wrap header-row">
-    <span>© <span id="year">2026</span> Pauline Lentes · Tous droits réservés</span>
-    <span>Enseignement spécialisé · Valais, Suisse</span>
-  </div>
-</footer>
-
+<footer class="wrap foot"><span>© <span id="year">2026</span> Pauline Lentes · Tous droits réservés</span><span>Enseignement spécialisé · Valais, Suisse</span></footer>
 <script>
 (function () {
   document.getElementById('year').textContent = new Date().getFullYear();

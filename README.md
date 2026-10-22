@@ -21,6 +21,7 @@ img/
   pl-restart.jpg     capture de PL-restart’ (carte outil)
 fonts/
   atkinson-*.woff2   Atkinson Hyperlegible auto-hébergée (aucun appel à Google Fonts)
+  lexend.woff2       Lexend auto-hébergée (titres et chiffres)
 ```
 
 ## Mettre à jour le site
@@ -29,7 +30,7 @@ Le site tient en deux pages HTML et une feuille de style, sans dépendance de bu
 
 ## Identité visuelle
 
-Le site applique le système d'identité des outils PL : palette sobre, police [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) (accessibilité renforcée, servie depuis `fonts/`), monogramme PL. Voir le [design system](https://claude.ai/artifact/8Y4yKxJy4C4u5vBcKg4h4Z) pour les tokens complets (couleurs, typographie, espacement).
+Le site applique le système d'identité des outils PL : palette sobre, police [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) pour le texte et Lexend pour les titres et les chiffres (toutes deux servies depuis `fonts/`), monogramme PL. Direction « Le trait » : filets et traits d’épaisseur constante (`--trait`), blocs droits, actions en forme de pilule, un seul aplat de profondeur par page. Voir le [design system](https://claude.ai/artifact/8Y4yKxJy4C4u5vBcKg4h4Z) pour les tokens complets (couleurs, typographie, espacement).
 
 ## Formulaire de contact
 
